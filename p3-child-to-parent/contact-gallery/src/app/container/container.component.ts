@@ -8,11 +8,9 @@ import { Contact } from '../model/contact';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent implements OnInit {
-  @Output()
-  key = new EventEmitter<Contact>();
-
   contacts = CONTACTS;
   value: Contact = {};
+  
   constructor() { }
 
   ngOnInit(): void {
