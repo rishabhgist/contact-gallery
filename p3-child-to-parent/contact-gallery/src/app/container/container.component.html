@@ -1,10 +1,10 @@
 <div class="main">
     <div class="contacts">
-        <div *ngFor="let value of contacts" (mouseover)="onContactHovered(value)">
-            <app-card [contact]="value"></app-card>
+        <div *ngFor="let value of contacts">
+            <app-card [contact]="value" (card)="onContactHovered($event)"></app-card>
         </div>
     </div>
     <div class="contact-info">
-        <app-details></app-details>
+        <app-details [contact]="value"></app-details>
     </div>
 </div>

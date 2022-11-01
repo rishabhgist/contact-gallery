@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import { Contact } from '../model/contact';
 
 @Component({
@@ -10,6 +10,8 @@ export class CardComponent implements OnInit {
   @Input()
   contact: Contact = {}
 
+  @Output()
+  card = new EventEmitter<Contact>();
   constructor() { }
 
   initial: string = '';
@@ -21,5 +23,8 @@ export class CardComponent implements OnInit {
     } 
   }
   
+  onContactHovered(contact: Contact) {
+    this.card.emit(contact);
+  }
 
 }

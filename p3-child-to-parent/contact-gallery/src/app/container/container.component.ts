@@ -12,13 +12,13 @@ export class ContainerComponent implements OnInit {
   key = new EventEmitter<Contact>();
 
   contacts = CONTACTS;
-
+  value: Contact = {};
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onContactHovered(value:Contact) {
-    this.key.emit(value);
+  onContactHovered(value:any) {
+    this.value = value;
   }
 }
