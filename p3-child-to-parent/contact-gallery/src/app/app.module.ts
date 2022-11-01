@@ -7,6 +7,7 @@ import { IconComponent } from './icon/icon.component';
 import { SearchComponent } from './search/search.component';
 import { ContainerComponent } from './container/container.component';
 import { CardComponent } from './card/card.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardComponent } from './card/card.component';
     IconComponent,
     SearchComponent,
     ContainerComponent,
-    CardComponent
+    CardComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule
