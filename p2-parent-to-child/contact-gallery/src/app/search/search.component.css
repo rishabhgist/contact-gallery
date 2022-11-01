@@ -1,0 +1,8 @@
+.search-box input{
+    border: none;
+    background: none;
+    outline: none;
+    width: 250px;
+    height: 35px;
+    border-bottom: 1px solid rgb(0, 0, 192);
+}
